@@ -20,7 +20,7 @@ const App = () => {
           <Route path="/user/register" element={<Registration />} />
           <Route path="/user/login" element={<Login />} />
           <Route path="/user/eventpage" element={<EventCards />} />
-          //admin Routes
+          {/*admin Routes*/}
           <Route path="/admin/pendingrequests" element={<ViewPendingRequests />} />
           <Route path="/admin/admindashboard" element={<AdminDashboard  />} />
         </Routes>
