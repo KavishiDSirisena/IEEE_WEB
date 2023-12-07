@@ -1,0 +1,60 @@
+.AboutUscontainer{
+    margin-top: 50px;
+    padding: 0 150px;
+    display: grid;
+    grid-template-columns: auto auto ;
+    grid-template-rows: auto auto;
+    gap: 15px 15px;
+  }
+  
+  .AboutUscontainer div{
+    background-color: #00629baf;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 25px 35px;
+  }
+
+  .AboutUscontainer div img{
+    width: 100px;
+  }
+
+  .AboutUscontainer div:nth-child(3){
+    grid-column: 1 / 3 ;
+    padding: 35px 85px;
+  }
+  
+  .AboutUscontainer .mission h1 , .AboutUscontainer .vision h1 , .AboutUscontainer .strategy h1{
+    color: white;
+    font-size: 2rem;
+    padding: 10px 0;
+    line-height: .8;
+    font-weight: 400;
+  }
+  
+  .AboutUscontainer .vision h1 , .AboutUscontainer .strategy h1{
+    margin-bottom: 25px;
+  }
+  
+  .AboutUscontainer .mission h1 span , .AboutUscontainer .vision h1 span , .AboutUscontainer .strategy h1 span{
+    font-size: 4rem;
+    color: #FFA300;
+    font-weight: 800;
+  }
+  
+  .AboutUscontainer .mission p , .AboutUscontainer .vision p , .AboutUscontainer .strategy p{
+    text-align: justify;
+  }
+  
+  .AboutUscontainer .mission , .AboutUscontainer .vision , .AboutUscontainer .strategy{
+    justify-content: space-between;
+  }
+  
+  .AboutUscontainer .mission img , .AboutUscontainer .vision img {
+    align-self: flex-end;
+  }
+  
+  .AboutUscontainer .strategy img , .AboutUscontainer .strategy h1 {
+    align-self: center;
+    text-align: center;
+  }

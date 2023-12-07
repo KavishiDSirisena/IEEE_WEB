@@ -1,0 +1,75 @@
+.hero-container{
+    width: 70vw;
+    margin:auto;
+    margin-top:  75px;
+    margin-bottom:  100px;
+    padding: 35px;
+    background-color: rgba(255, 255, 255, 0.866);
+    
+    border-radius: 15px;
+    display: grid;
+    grid-column: 3fr 1fr;
+    gap: 50px;
+    align-items: center;
+  }
+  
+  .hero-container .image-boxes{
+    width: 400px;
+    height: 350px;
+    grid-column: 1/2;
+    display: grid;
+    grid-template-columns: 1.5fr 2fr 1.5fr;
+    grid-template-rows: repeat(1fr , 10);
+    gap: 5px 10px;
+  }
+  
+  .hero-container .image-boxes div{
+    background: url(./images/hero.png) no-repeat;
+    background-size: cover;
+    border-radius: 3px;
+  }
+  
+  .hero-container .image-boxes .box-1{
+    grid-row: 2 / 9;
+    background-position: 5% 50%;
+  }
+  .hero-container .image-boxes .box-2{
+    grid-row: 1 / 10;
+    background-position: 45% 50%;
+  }
+  .hero-container .image-boxes .box-3{
+    grid-row: 2 / 5;  
+    background-position: 90% 20%;
+    background-size: 450px;
+  }
+  .hero-container .image-boxes .box-4{
+    grid-row: 5 / 8;
+    background-position: 92% 100%;
+    background-size: 400px;
+  }
+  
+  .hero-container .text{
+    grid-column: 2/3;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 90%;
+  }
+  
+  .hero-container .text p{
+    color: black;
+  }
+  
+  .hero-container .text .title-text{
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  
+  .hero-container .text .title-text span{
+    color: #00629B;
+  }
+  
+  .hero-container .text .content-text{
+    font-size: 1rem;
+  }
