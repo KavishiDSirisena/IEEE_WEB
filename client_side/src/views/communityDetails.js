@@ -5,7 +5,7 @@ import "react-multi-carousel/lib/styles.css";
 
 export default function CommunityDetails() {
 
-  const productData = [
+  const productData1 = [
     {
       id: 1,
       imageurl: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyc29ufGVufDB8fDB8fHww",
@@ -15,45 +15,75 @@ export default function CommunityDetails() {
     {
       id: 2,
       imageurl: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyc29ufGVufDB8fDB8fHww",
-      name: "Sport sneakers",
-      description: "Some text about the product..",
+      name: "Indudini",
+      description: "CHAIRPERSON",
     },
     {
       id: 3,
       imageurl: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyc29ufGVufDB8fDB8fHww",
-      name: "iWatch",
-      description: "Some text about the product..",
+      name: "Adithya",
+      description: "CHAIRPERSON",
     },
     {
       id: 4,
       imageurl: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyc29ufGVufDB8fDB8fHww",
-      name: "Water Bottle",
-      description: "Some text about the product..",
+      name: "Adithya",
+      description: "CHAIRPERSON",
     },
     {
       id: 5,
       imageurl: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyc29ufGVufDB8fDB8fHww",
-      name: "Vans sneakers",
-      description: "Some text about the product..",
+      name: "Adithya",
+      description: "CHAIRPERSON",
     },
     {
       id: 6,
       imageurl: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyc29ufGVufDB8fDB8fHww",
-      name: "Coco Noir",
-      description: "Some text about the product..",
+      name: "Adithya",
+      description: "CHAIRPERSON",
     },
+    
+  ];
+
+
+  const productData2 = [
     {
       id: 7,
       imageurl: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyc29ufGVufDB8fDB8fHww",
-      name: "Sunglasses",
-      description: "Some text about the product..",
+      name: "Adithya",
+      description: "CHAIRPERSON",
     },
     {
       id: 8,
       imageurl: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyc29ufGVufDB8fDB8fHww",
-      name: "Dove cream",
-      description: "Some text about the product..",
+      name: "Indudini",
+      description: "CHAIRPERSON",
     },
+    {
+      id: 9,
+      imageurl: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyc29ufGVufDB8fDB8fHww",
+      name: "Adithya",
+      description: "CHAIRPERSON",
+    },
+    {
+      id: 10,
+      imageurl: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyc29ufGVufDB8fDB8fHww",
+      name: "Adithya",
+      description: "CHAIRPERSON",
+    },
+    {
+      id: 11,
+      imageurl: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyc29ufGVufDB8fDB8fHww",
+      name: "Adithya",
+      description: "CHAIRPERSON",
+    },
+    {
+      id: 12,
+      imageurl: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyc29ufGVufDB8fDB8fHww",
+      name: "Adithya",
+      description: "CHAIRPERSON",
+    },
+    
   ];
 
   const responsive = {
@@ -81,7 +111,25 @@ export default function CommunityDetails() {
       <h1>Current Executive Board</h1>
       <h3>(2023 - 2024)</h3>
       <Carousel showDots={true} responsive={responsive}>
-        {productData.map((item) => (
+        {productData1.map((item) => (
+          <Product
+            key={item.id}
+            name={item.name}
+            url={item.imageurl}
+            description={item.description}
+          />
+        ))}
+        </Carousel>
+
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+
+        <h1>Past Executive Board</h1>
+      <h3>(2022 - 2023)</h3>
+<Carousel showDots={true} responsive={responsive}>
+{productData2.map((item) => (
           <Product
             key={item.id}
             name={item.name}
