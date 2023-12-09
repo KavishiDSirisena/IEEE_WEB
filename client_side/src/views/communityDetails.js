@@ -1,110 +1,105 @@
-import React from 'react';
-import '../styles/communityDetails.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import React from "react";
+import "./../styles/communityDetails.css";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 
+export default function CommunityDetails() {
 
-function CommunityDetails() {
-  
-	return (
-		<div>
-			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
-            <div class="container">
-            <div class="section ourTeam">
-                <header class="text-center">
-                    <h2>Meet <strong>Our Team</strong></h2>
-                </header>
-                <div class="row">
-                    <div class="col-xs-6 col-sm-4 col-md-3 i">
-                        <div class="c text-center">
-                            <div class="wrap">
-                                <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="#" width="270" height="270" class="img-responsive"/>
-                                <div class="info">
-                                    <h3 class="name">John Doe</h3>
-                                    <h4 class="position">Chief Executive Officer</h4>
-                                </div>
-                            </div>
-                            <div class="more">
-                                <p>Ut sed consectetur ligula. Aenean id nibh accumsan, pre tium nulla in, lacinia aecenas mollis. Sed mauris at sollicitudin. Etiam maximus mauris vel leo mattis, non venenatis magna finibus vestibulum.</p>
-                                <div class="socials">
-                                    <a href="#/" title="#" class="facebook"><i class="fa fa-facebook"></i></a>
-                                    <a href="#/" title="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                                    <a href="#/" title="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
-                                    <a href="#/" title="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-6 col-sm-4 col-md-3 i">
-                        <div class="c text-center">
-                            <div class="wrap">
-                                <img src="https://bootdey.com/img/Content/avatar/avatar6.png" alt="#" width="270" height="270" class="img-responsive"/>
-                                <div class="info">
-                                    <h3 class="name">Elizabeth Doe</h3>
-                                    <h4 class="position">Marketing Specialist</h4>
-                                </div>
-                            </div>
-                            <div class="more">
-                                <p>Ut sed consectetur ligula. Aenean id nibh accumsan, pre tium nulla in, lacinia aecenas mollis. Sed mauris at sollicitudin. Etiam maximus mauris vel leo mattis, non venenatis magna finibus vestibulum.</p>
-                                <div class="socials">
-                                    <a href="#/" title="#" class="facebook"><i class="fa fa-facebook"></i></a>
-                                    <a href="#/" title="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                                    <a href="#/" title="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
-                                    <a href="#/" title="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-6 col-sm-4 col-md-3 i">
-                        <div class="c text-center">
-                            <div class="wrap">
-                                <img src="https://bootdey.com/img/Content/avatar/avatar3.png" alt="#" width="270" height="270" class="img-responsive"/>
-                                <div class="info">
-                                    <h3 class="name">Doug Doe</h3>
-                                    <h4 class="position">Head of Support</h4>
-                                </div>
-                            </div>
-                            <div class="more">
-                                <p>Ut sed consectetur ligula. Aenean id nibh accumsan, pre tium nulla in, lacinia aecenas mollis. Sed mauris at sollicitudin. Etiam maximus mauris vel leo mattis, non venenatis magna finibus vestibulum.</p>
-                                <div class="socials">
-                                    <a href="#/" title="#" class="facebook"><i class="fa fa-facebook"></i></a>
-                                    <a href="#/" title="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                                    <a href="#/" title="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
-                                    <a href="#/" title="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-6 col-sm-4 col-md-3 i">
-                        <div class="c text-center">
-                            <div class="wrap">
-                                <img src="https://bootdey.com/img/Content/avatar/avatar4.png" alt="#" width="270" height="270" class="img-responsive"/>
-                                <div class="info">
-                                    <h3 class="name">Fabricio Doe</h3>
-                                    <h4 class="position">Chief Technical Officer</h4>
-                                </div>
-                            </div>
-                            <div class="more">
-                                <p>Ut sed consectetur ligula. Aenean id nibh accumsan, pre tium nulla in, lacinia aecenas mollis. Sed mauris at sollicitudin. Etiam maximus mauris vel leo mattis, non venenatis magna finibus vestibulum.</p>
-                                <div class="socials">
-                                    <a href="#/" title="#" class="facebook"><i class="fa fa-facebook"></i></a>
-                                    <a href="#/" title="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                                    <a href="#/" title="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
-                                    <a href="#/" title="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            </div>
+  const productData = [
+    {
+      id: 1,
+      imageurl: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyc29ufGVufDB8fDB8fHww",
+      name: "Adithya",
+      description: "CHAIRPERSON",
+    },
+    {
+      id: 2,
+      imageurl: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyc29ufGVufDB8fDB8fHww",
+      name: "Sport sneakers",
+      description: "Some text about the product..",
+    },
+    {
+      id: 3,
+      imageurl: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyc29ufGVufDB8fDB8fHww",
+      name: "iWatch",
+      description: "Some text about the product..",
+    },
+    {
+      id: 4,
+      imageurl: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyc29ufGVufDB8fDB8fHww",
+      name: "Water Bottle",
+      description: "Some text about the product..",
+    },
+    {
+      id: 5,
+      imageurl: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyc29ufGVufDB8fDB8fHww",
+      name: "Vans sneakers",
+      description: "Some text about the product..",
+    },
+    {
+      id: 6,
+      imageurl: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyc29ufGVufDB8fDB8fHww",
+      name: "Coco Noir",
+      description: "Some text about the product..",
+    },
+    {
+      id: 7,
+      imageurl: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyc29ufGVufDB8fDB8fHww",
+      name: "Sunglasses",
+      description: "Some text about the product..",
+    },
+    {
+      id: 8,
+      imageurl: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyc29ufGVufDB8fDB8fHww",
+      name: "Dove cream",
+      description: "Some text about the product..",
+    },
+  ];
 
-        
+  const responsive = {
+    superLargeDesktop: {
+      breakpoint: { max: 4000, min: 1024 },
+      items: 5,
+      slidesToSlide: 2,
+    },
+    desktop: {
+      breakpoint: { max: 1024, min: 800 },
+      items: 4,
+    },
+    tablet: {
+      breakpoint: { max: 800, min: 464 },
+      items: 2,
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1,
+    },
+  };
 
-		</div>
-
-
-
-        
-	);
+  return (
+    <div className="community-details">
+      <h1>Current Executive Board</h1>
+      <h3>(2023 - 2024)</h3>
+      <Carousel showDots={true} responsive={responsive}>
+        {productData.map((item) => (
+          <Product
+            key={item.id}
+            name={item.name}
+            url={item.imageurl}
+            description={item.description}
+          />
+        ))}
+      </Carousel>
+    </div>
+  );
 }
-export default CommunityDetails;
+
+function Product(props) {
+  return (
+    <div className="card">
+      <img className="product-image" src={props.url} alt="product" />
+      <h2>{props.name}</h2>
+      <p>{props.description}</p>
+    </div>
+  );
+}
