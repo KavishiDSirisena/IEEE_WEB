@@ -3,10 +3,8 @@ import './AboutUsCounter.css'
 
 const AboutUsCounter = () => {
         
-    const updateCounter = (element , interval) => {
+    const updateCounter = (element , interval , target) => {
         element.innerText = "0";
-        
-        const target = + element.getAttribute("data-target")
         let i = 0;
         if (element.innerText == target){
             return;
@@ -24,10 +22,10 @@ const AboutUsCounter = () => {
     }
 
     useEffect(() => {
-        updateCounter(document.getElementById('count1') , 40);
-        updateCounter(document.getElementById('count2') , 45);
-        updateCounter(document.getElementById('count3') , 50);
-        updateCounter(document.getElementById('count4') , 25);
+        updateCounter(document.getElementById('count1') , 37 , 70);
+        updateCounter(document.getElementById('count2') , 45 , 60);
+        updateCounter(document.getElementById('count3') , 50 , 50);
+        updateCounter(document.getElementById('count4') , 25 , 100);
     })
 
     return ( 
@@ -35,19 +33,19 @@ const AboutUsCounter = () => {
 
             <div>
                 <h2>Active members</h2>
-                <p id="count1" data-target="70"></p>
+                <p id="count1"></p>
             </div>
             <div>
                 <h2>Active Projects</h2>
-                <p id="count2" data-target="60"></p>
+                <p id="count2"></p>
             </div>
             <div>
                 <h2>Active Projects</h2>
-                <p id="count3" data-target="50"></p>
+                <p id="count3"></p>
             </div>
             <div>
                 <h2>Active Projects</h2>
-                <p id="count4" data-target="100"></p>
+                <p id="count4"></p>
             </div>
 
         </div>

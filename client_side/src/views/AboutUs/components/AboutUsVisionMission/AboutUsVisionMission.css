@@ -1,3 +1,9 @@
+@media all and (max-width: 500px) {
+  .AboutUscontainer div{
+    color: red;
+  }
+}
+
 .AboutUscontainer{
     margin-top: 50px;
     padding: 0 150px;
@@ -9,6 +15,8 @@
   
   .AboutUscontainer div{
     background-color: #00629baf;
+    backdrop-filter: blur(5px);
+    border-radius: 7.5px;
     color: white;
     display: flex;
     flex-direction: column;
@@ -34,9 +42,11 @@
   
   .AboutUscontainer .vision h1 , .AboutUscontainer .strategy h1{
     margin-bottom: 25px;
+    font-family: 'Open Sans', sans-serif;
   }
   
   .AboutUscontainer .mission h1 span , .AboutUscontainer .vision h1 span , .AboutUscontainer .strategy h1 span{
+    font-family: 'Open Sans', sans-serif;
     font-size: 4rem;
     color: #FFA300;
     font-weight: 800;
@@ -44,6 +54,8 @@
   
   .AboutUscontainer .mission p , .AboutUscontainer .vision p , .AboutUscontainer .strategy p{
     text-align: justify;
+    font-size: 1.1rem;
+    line-height: 1.2;
   }
   
   .AboutUscontainer .mission , .AboutUscontainer .vision , .AboutUscontainer .strategy{

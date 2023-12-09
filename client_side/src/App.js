@@ -9,13 +9,14 @@ import ViewPendingRequests from './Admin/ViewPendingRequests';
 import AdminDashboard from './Admin/admindashboard';
 import EventCards from './views/eventpage';
 import AboutUs from './views/AboutUs/AboutUs';
+import Navbar from './views/Navbar';
 // import PrivateRoute from './firebase/privateRoute';
 
 const App = () => {
   const { currentUser } = useAuth();
   return (
     <Router>
-      
+        <Navbar home = "/" aboutus = "/user/aboutus" communityDetails = "/" events = "/" contactUs = "/" gallery = "/" login = "/user/login"/>
         <Routes>
           <Route path="/user/profile" element={<UserProfile />} />
           <Route path="/user/register" element={<Registration />} />

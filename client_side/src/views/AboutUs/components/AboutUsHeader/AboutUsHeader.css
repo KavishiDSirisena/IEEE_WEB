@@ -1,7 +1,7 @@
 header{
     width: 100%;
     height: 45vh;
-    background: rgba(0, 0, 0, 0.266);
+    background: rgba(0, 0, 0, 0.45);
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -18,7 +18,14 @@ header{
   header div h1{
     color:white;
     text-align: center;
-    font-size: 6.5rem;
-    letter-spacing: 10px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 5.5rem;
+    letter-spacing: 5px;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  header div p{
+    color: #FFA300;
+    text-align: center;
+    font-size: 1.1rem;
+
   }
