@@ -1,0 +1,38 @@
+.event-page {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  
+  section {
+    flex: 1;
+    margin: 0 20px;
+  }
+  
+  .event-cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .event-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px;
+    width: 400px;
+    height: 300px;
+  }
+  
+  .image-slider {
+    display: flex;
+    overflow-x: auto;
+    margin-top: 10px;
+  }
+  
+  .image-slider img {
+    width: 100px; /* Adjust as needed */
+    height: 150px; /* Adjust as needed */
+    margin-right: 10px;
+    border-radius: 8px;
+  }
+  
