@@ -17,6 +17,7 @@
     padding: 20px;
     text-align: center;
     margin: 10px;
+    border: none;
   }
   
   .product-image {
@@ -31,24 +32,7 @@
     font-size: 18px;
   }
   
-  .price {
-    font-weight: bold;
-    color: #007bff;
-  }
-  
-  button {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  button:hover {
-    background-color: #0056b3;
-  }
+
   
   /* Responsive Styles */
   @media (max-width: 768px) {
@@ -74,5 +58,114 @@
       padding: 8px 16px;
       font-size: 14px;
     }
+
+    .community-section {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 800px; /* Set the desired maximum width for the section */
+      margin: 0 auto; /* Center the section on the page */
+    }
+    
+    .community-introduction {
+      width: 60%; /* Adjust the width of the paragraph section */
+    }
+    
+    .community-image {
+      width: 40%; /* Adjust the width of the image section */
+    }
+    
+    .community-image img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px; /* Optional: add border-radius to the image */
+    }
   }
+
+
+
+
+
   
+   /* Styles for the Our Community section */
+.community-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px; /* Set the desired maximum width for the section */
+  margin: 0 auto; /* Center the section on the page */
+}
+
+.community-introduction {
+  width: 50%; /* Adjust the width of the paragraph section */
+  margin-right: 20px; /* Add some space between the paragraph and the image */
+}
+
+.community-image {
+  width: 48%; /* Adjust the width of the image section */
+  margin-top: 20px;
+}
+
+.community-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px; /* Optional: add border-radius to the image */
+}
+
+    /* Styles for the Our Community heading */
+    .our-community {
+      font-size: 24px; /* Set the font size for the Our Community heading */
+      font-Family: 'Times New Roman, serif';
+      color: #E87722; /* Set the font color for the Our Community heading */
+    }
+    /* Styles for the Our Community heading */
+    .best-community {
+      font-size: 32px; /* Set the font size for the Our Community heading */
+      font-Family: 'Times New Roman, serif';
+      color: #00629B; /* Set the font color for the Our Community heading */
+    }
+
+    /* Styles for the main content */
+    .community-details {
+      margin-top: 50px; /* Add margin to separate the content from the Our Community section */
+    }
+
+    /* Styles for the card */
+    .card {
+      border: 1px solid #ddd;
+      padding: 10px;
+      margin: 10px;
+      text-align: center;
+    }
+
+    .product-image {
+      width: 100%;
+      height: auto;
+      border-radius: 8px; /* Optional: add border-radius to the product image */
+    }
+    /* Styles for the "paraa" class */
+    .paraa {
+      font-size: 20px; /* Set your desired font size */
+      font-Family: 'Times New Roman, serif'; /* Set your preferred font family */
+      color: #00629B; /* Set your preferred font color */
+      text-align: justify; /* Justify the text */
+      line-height: 1.5; /* Set the line height for better readability */
+      font-Weight: 'bold';
+    }
+    .carousel-container {
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add a subtle box shadow at the bottom */
+    }
+    
+    .blue-background {
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add a subtle box shadow at the bottom */
+    }
+
+
