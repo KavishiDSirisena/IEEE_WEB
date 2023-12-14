@@ -89,7 +89,7 @@ export default function CommunityDetails() {
   const responsive = {
     superLargeDesktop: {
       breakpoint: { max: 4000, min: 1024 },
-      items: 5,
+      items: 4,
       slidesToSlide: 2,
     },
     desktop: {
@@ -106,48 +106,112 @@ export default function CommunityDetails() {
     },
   };
 
+  
+
   return (
-    <div className="community-details">
-      <h1>Current Executive Board</h1>
-      <h3>(2023 - 2024)</h3>
-      <Carousel showDots={true} responsive={responsive}>
-        {productData1.map((item) => (
-          <Product
-            key={item.id}
-            name={item.name}
-            url={item.imageurl}
-            description={item.description}
-          />
-        ))}
-        </Carousel>
+    <div>
+      <div class="community-section">
+  <div class="community-introduction">
+    <h4 className="our-community">Our Community</h4><br></br>
+    <h1 className="best-community">We are the best community..</h1>
+    
+    <p className="paraa">
+    IEEE is the world’s largest professional association 
+    advancing innovation and technological excellence for the 
+    benefit of humanity. IEEE and its members inspire a global 
+    community to innovate for a better tomorrow through its highly 
+    cited publications, conferences, technology standards, and 
+    professional and educational activities. IEEE is the trusted
+    “voice” for engineering, computing and technology information
+    around the globe..
+    </p>
+    
+  </div>
+  <div class="community-image">
+    <img src="https://images.inc.com/uploaded_files/image/1920x1080/getty_485914101_122742.jpg" />
+  </div>
+</div>
+
+
+ {/* Current board Carousel starts here */}
+ <section className="community-details">
+        <div className="carousel-container blue-background">
+          <h1 className="best-community">Current Executive Board</h1>
+          <h3 className="our-community">(2023 - 2024)</h3>
+          <Carousel showDots={false} responsive={responsive}>
+            {productData1.map((item) => (
+              <Product
+                key={item.id}
+                name={item.name}
+                url={item.imageurl}
+                description={item.description}
+              />
+            ))}
+          </Carousel>
+        </div>
 
         <br></br>
         <br></br>
         <br></br>
         <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
 
-        <h1>Past Executive Board</h1>
-      <h3>(2022 - 2023)</h3>
-<Carousel showDots={true} responsive={responsive}>
-{productData2.map((item) => (
-          <Product
-            key={item.id}
-            name={item.name}
-            url={item.imageurl}
-            description={item.description}
-          />
-        ))}
-      </Carousel>
+        {/* Past board Carousel starts here */}
+        <div className="carousel-container blue-background">
+          <h1 className="best-community">Past Executive Board</h1>
+          <h3 className="our-community">(2022 - 2023)</h3>
+          <Carousel showDots={false} responsive={responsive}>
+            {productData2.map((item) => (
+              <Product
+                key={item.id}
+                name={item.name}
+                url={item.imageurl}
+                description={item.description}
+              />
+            ))}
+          </Carousel>
+        </div>
+      </section>
     </div>
   );
 }
 
 function Product(props) {
+  const styles = {
+    name: {
+      color: '#00629b',
+      fontSize: '32px',
+      fontFamily: 'Times New Roman, serif',
+      fontWeight: 'bold',
+    },
+    
+    description: {
+      color: '#E87722',
+      fontSize: '24px',
+      fontFamily: 'Times New Roman, serif',
+      fontWeight: 'bold',
+    },
+    line: {
+      border: '1px solid #00629b', // Set the border style to solid and the color to #00629b
+    },
+  };
+
+  // You can adjust the line hardness dynamically by passing a `lineHardness` prop
+  // if (props.lineHardness) {
+  //   styles.line.border = `${props.lineHardness}px solid blue`;
+  // }
+
   return (
     <div className="card">
       <img className="product-image" src={props.url} alt="product" />
-      <h2>{props.name}</h2>
-      <p>{props.description}</p>
+      <h2 style={styles.name}>{props.name}</h2>
+      <hr style={styles.line} />
+      <p style={styles.description}>{props.description}</p>
     </div>
   );
 }
+
