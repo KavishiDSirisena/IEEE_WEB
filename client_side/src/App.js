@@ -10,6 +10,7 @@ import AdminDashboard from './Admin/admindashboard';
 import EventCards from './views/eventpage';
 import AboutUs from './views/AboutUs/AboutUs';
 import CommunityDetails from './views/communityDetails';
+import Home from './views/home/Home';
 // import PrivateRoute from './firebase/privateRoute';
 
 const App = () => {
@@ -18,6 +19,7 @@ const App = () => {
     <Router>
       
         <Routes>
+          <Route path="/user/home" element={<Home />} />
           <Route path="/user/profile" element={<UserProfile />} />
           <Route path="/user/register" element={<Registration />} />
           <Route path="/user/login" element={<Login />} />
