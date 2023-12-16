@@ -1,0 +1,43 @@
+header{
+    width: 100%;
+    height: 45vh;
+    background: rgba(0, 0, 0, 0.45);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  header div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  header div h1{
+    color:white;
+    text-align: center;
+    font-size: 5.5em;
+    letter-spacing: 5px;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  header div p{
+    color: #FFA300;
+    text-align: center;
+    font-size: 1.1em;
+
+  }
+
+
+  @media (max-width: 1000px){
+    
+    header{
+      font-size: 12px;
+    }
+
+    header div p{
+      padding: 0 25px;
+    }
+  }

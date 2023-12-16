@@ -1,17 +1,39 @@
 /* MembershipCard.css */
 
 .MembershipCard {
-    background-color: #3498db; /* Blue background color */
-    color: #fff; /* White text color */
+    /* background-color: #00629B;  */
+    /* color: #fff; */
     width: 95%;
     margin: 20px;
+    padding: 35px 25px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    
   }
-  
-  
   
   .MembershipCard .MembershipCardBody {
     padding: 15px;
   }
   
+  .MembershipCard .MembershipCardBody a{
+    font-size: 2rem;
+    text-decoration: none;
+    color: #FFA300;
+  }
+
+  .MembershipCard img{
+    width: 75%;
+    border-radius: 15px;
+  }
+
+  .textAlignLeft{
+    text-align: right;
+  }
+  .textAlignJustify{
+    text-align: justify;
+  }

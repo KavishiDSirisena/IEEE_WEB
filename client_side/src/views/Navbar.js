@@ -30,11 +30,11 @@ const Navbar = ({home , aboutus , communityDetails , events , contactUs , galler
             </div>
             <div className="nav-links">
                 <div className="nav-item"><a href={ home }>Home</a></div>
-                <div className="nav-item" id='aboutus'><a href={ aboutus }>About Us</a></div>
                 <div className="nav-item"><a href={ communityDetails }>Committee</a></div>
                 <div className="nav-item"><a href={ events }>Events</a></div>
-                <div className="nav-item"><a href={ contactUs }>Contact Us</a></div>
                 <div className="nav-item"><a href={ gallery }>Gallery</a></div>
+                <div className="nav-item" id='aboutus'><a href={ aboutus }>About Us</a></div>
+                <div className="nav-item"><a href={ contactUs }>Contact Us</a></div>
                 {/* <div className="nav-item"><a href={ login }>Login / Signup</a></div> */}
             </div>
             <div className="side-bar-img" onClick={navBarToggle}>
