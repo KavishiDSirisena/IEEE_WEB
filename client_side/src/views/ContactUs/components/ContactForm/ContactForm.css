@@ -1,0 +1,42 @@
+/* Firstcomp.css */
+
+.first {
+    text-align: center;
+    margin: 50px auto; /* Centers the form horizontally */
+  }
+  
+  form {
+    max-width: 400px; /* Adjust the max width of the form */
+    margin: auto; /* Centers the form within its container */
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    outline: none;
+    border: 2px solid #ffcd03; /* Yellow outline for input fields */
+    box-sizing: border-box;
+  }
+  
+  button {
+    background-color: #ffcd03; /* Yellow background for the submit button */
+    color: black;
+    width: 25%;
+    font-weight: bold;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 20%;
+  }
+  
+  button:hover {
+    background-color: #ffd700; /* Lighter yellow on hover */
+  }
+  

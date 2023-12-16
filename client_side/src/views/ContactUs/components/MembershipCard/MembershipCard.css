@@ -1,0 +1,19 @@
+/* MembershipCard.css */
+
+.card {
+    
+
+    background-color: #3498db; /* Blue background color */
+    color: #fff; /* White text color */
+    width: 95%;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  
+  .cardbody {
+    padding: 15px;
+  }
+  

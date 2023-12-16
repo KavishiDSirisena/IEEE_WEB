@@ -1,29 +1,24 @@
-@media all and (max-width: 500px) {
-  .AboutUscontainer div{
-    color: red;
-  }
+.AboutUscontainer{
+  margin-top: 50px;
+  padding: 0 150px;
+  display: grid;
+  grid-template-columns: auto auto ;
+  grid-template-rows: auto auto;
+  gap: 15px 15px;
+}
+  
+.AboutUscontainer div{
+  padding: 35px;
+  background-color: #00629baf;
+  backdrop-filter: blur(5px);
+  border-radius: 7.5px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.AboutUscontainer{
-    margin-top: 50px;
-    padding: 0 150px;
-    display: grid;
-    grid-template-columns: auto auto ;
-    grid-template-rows: auto auto;
-    gap: 15px 15px;
-  }
-  
-  .AboutUscontainer div{
-    background-color: #00629baf;
-    backdrop-filter: blur(5px);
-    border-radius: 7.5px;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    padding: 25px 35px;
-  }
-
-  .AboutUscontainer div img{
+.AboutUscontainer div img{
     width: 100px;
   }
 
@@ -32,36 +27,36 @@
     padding: 35px 85px;
   }
   
-  .AboutUscontainer .mission h1 , .AboutUscontainer .vision h1 , .AboutUscontainer .strategy h1{
+  .AboutUscontainer div h1{
     color: white;
-    font-size: 2rem;
+    font-size: 2em;
     padding: 10px 0;
     line-height: .8;
     font-weight: 400;
   }
   
-  .AboutUscontainer .vision h1 , .AboutUscontainer .strategy h1{
+  .AboutUscontainer div h1{
     margin-bottom: 25px;
     font-family: 'Open Sans', sans-serif;
   }
   
-  .AboutUscontainer .mission h1 span , .AboutUscontainer .vision h1 span , .AboutUscontainer .strategy h1 span{
+  .AboutUscontainer div h1 span{
     font-family: 'Open Sans', sans-serif;
-    font-size: 4rem;
+    font-size: 2.5em;
     color: #FFA300;
     font-weight: 800;
   }
   
-  .AboutUscontainer .mission p , .AboutUscontainer .vision p , .AboutUscontainer .strategy p{
+  .AboutUscontainer div p{
     text-align: justify;
-    font-size: 1.1rem;
+    font-size: 1.1em;
     line-height: 1.2;
   }
-  
-  .AboutUscontainer .mission , .AboutUscontainer .vision , .AboutUscontainer .strategy{
-    justify-content: space-between;
+
+  .AboutUscontainer .mission img{
+    width: 120px;
   }
-  
+
   .AboutUscontainer .mission img , .AboutUscontainer .vision img {
     align-self: flex-end;
   }
@@ -69,4 +64,41 @@
   .AboutUscontainer .strategy img , .AboutUscontainer .strategy h1 {
     align-self: center;
     text-align: center;
+  }
+  
+  
+  @media (max-width: 1000px) {
+    .AboutUscontainer{
+      margin-top: 50px;
+      display: block;     
+      padding: 0px 15px; 
+      font-size: 10px;
+    }
+    
+    .AboutUscontainer div {
+      margin-top: 25px;
+      padding: 15px 25px;
+      gap: 10px
+    }
+
+    .AboutUscontainer div:nth-child(1){
+      margin-top: 0;
+    }
+    
+    .AboutUscontainer div:nth-child(2){
+      gap: 0;
+    }
+    
+    .AboutUscontainer div:nth-child(3){
+      padding: 15px 25px;
+    }
+
+    .AboutUscontainer div img {
+      width: 75px;
+    }
+    
+    .AboutUscontainer .mission img{
+      width: 80px;
+    }
+
   }

@@ -6,6 +6,7 @@ import AboutUsGridContainer from './components/AboutUsGridContainer/AboutUsGridC
 import AboutUsVisionMission from './components/AboutUsVisionMission/AboutUsVisionMission'
 
 const AboutUs = () => {
+
     return ( 
         <div className='AboutUs'>
             <AboutUsHeader/>

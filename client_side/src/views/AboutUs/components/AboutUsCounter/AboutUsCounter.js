@@ -32,19 +32,19 @@ const AboutUsCounter = () => {
         <div className="counters">
 
             <div>
-                <h2>Active members</h2>
+                <h3>Active members</h3>
                 <p id="count1"></p>
             </div>
             <div>
-                <h2>Active Projects</h2>
+                <h3>Active Projects</h3>
                 <p id="count2"></p>
             </div>
             <div>
-                <h2>Active Projects</h2>
+                <h3>Active Projects</h3>
                 <p id="count3"></p>
             </div>
             <div>
-                <h2>Active Projects</h2>
+                <h3>Active Projects</h3>
                 <p id="count4"></p>
             </div>
 

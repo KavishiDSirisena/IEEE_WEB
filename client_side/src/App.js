@@ -11,19 +11,21 @@ import EventCards from './views/eventpage';
 import AboutUs from './views/AboutUs/AboutUs';
 import Navbar from './views/Navbar';
 import CommunityDetails from './views/communityDetails';
+import ContactUs from './views/ContactUs/ContactUs';
 // import PrivateRoute from './firebase/privateRoute';
 
 const App = () => {
   const { currentUser } = useAuth();
   return (
     <Router>
-        <Navbar home = "/" aboutus = "/user/aboutus" communityDetails = "/" events = "/" contactUs = "/" gallery = "/" login = "/user/login"/>
+        <Navbar home = "/" aboutus = "/user/aboutus" communityDetails = "/user/communityDetails" events = "/" contactUs = "/user/contactus" gallery = "/" login = "/user/login"/>
         <Routes>
           <Route path="/user/profile" element={<UserProfile />} />
           <Route path="/user/register" element={<Registration />} />
           <Route path="/user/login" element={<Login />} />
           <Route path="/user/eventpage" element={<EventCards />} />
           <Route path="/user/aboutus" element={<AboutUs />} />
+          <Route path="/user/contactus" element={<ContactUs />} />
           <Route path="/user/communityDetails" element={<CommunityDetails />} />
           {/*admin Routes*/}
           <Route path="/admin/pendingrequests" element={<ViewPendingRequests />} />

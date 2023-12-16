@@ -1,13 +1,16 @@
 nav{
     z-index: 100;
-    width: 100vw;
-    padding: 15px 25px;
+    width: 100%;
+    padding: 5px 25px;
     background: white;
-    position: fixed;
+    position: sticky;
     top: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: rgba(180, 180, 180, 0.6) 0px 6px 8px;
+
+    /* border: 5px black solid; */
 }
 
 nav .nav-logo{
@@ -15,7 +18,7 @@ nav .nav-logo{
 }
 
 nav .nav-logo img{
-    width: 120px;
+    width: 130px;
 }
 
 nav .nav-links{
@@ -23,30 +26,86 @@ nav .nav-links{
     align-items: center;
 }
 
-nav .nav-links .nav-items{
-
-}
-
 nav .nav-links .nav-item a{
     color: black;
     font-weight: 500;
     text-decoration: none;
     display:inline-block; 
-    padding:0 7px; 
-    position:relative;
+    padding:2px 15px;
+    transition: all ease .3s;
 }
 
-nav .nav-links .nav-item a:hover{
-    color: #E87722;
-}
-
-nav .nav-links .nav-item:last-child{
-    margin-left: 5px;
-    background: #E87722;
-    padding: 5px 8px;
+nav .nav-links .nav-item:hover a{
+    background: #FFA300;
     border-radius: 20px;
+    font-size: 1.1rem;
+    color: white;
 }
 
-nav .nav-links .nav-item:last-child a:hover{
-    color: white;
+.Nav-bar-active{
+    color: #FFA300;
+}
+
+nav .side-bar, nav .side-bar-img{
+    display: none;
+}
+
+@media (max-width: 1000px){
+    
+    nav .nav-links {
+        display: none;
+    }
+
+    nav .side-bar-img{
+        display: inline-block;
+        width: 10%;
+        position: relative;
+        transition: .4s ease all;
+    }
+
+    nav .side-bar-img img{
+        position: absolute;
+        transform: translate(0%, -50%);
+        width: 100%;
+    }
+
+    nav .side-bar-img #NavBarToggle1{
+        transition: 1s ease all;
+        display: block;
+    }
+
+    nav .side-bar-img #NavBarToggle2{
+        transition: 1s ease all;
+        display: none;
+    }
+
+    nav .side-bar{
+        z-index: -1;
+        display: none;
+        /* background-color: red; */
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        right: 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        font-size: 20px;
+        transition: 1s ease all;
+    }
+
+    nav .side-bar .nav-item a{
+        color: black;
+        font-weight: 500;
+        text-decoration: none;
+        display:inline-block; 
+        padding:0 7px;
+    }
+
+    nav .side-bar .nav-item a:hover{
+        color: #FFA300;
+    }
+
 }
