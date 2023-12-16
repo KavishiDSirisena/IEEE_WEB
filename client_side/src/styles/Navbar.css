@@ -13,9 +13,9 @@ nav{
     /* border: 5px black solid; */
 }
 
-nav .nav-logo{
+/* nav .nav-logo{
 
-}
+} */
 
 nav .nav-logo img{
     width: 130px;
@@ -32,7 +32,7 @@ nav .nav-links .nav-item a{
     text-decoration: none;
     display:inline-block; 
     padding:2px 15px;
-    transition: all ease .3s;
+    transition: font-size ease .3s;
 }
 
 nav .nav-links .nav-item:hover a{

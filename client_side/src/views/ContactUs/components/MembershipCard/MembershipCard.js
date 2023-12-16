@@ -3,9 +3,9 @@ import './MembershipCard.css'; // Create a CSS file for styling
 
 const MembershipCard = () => {
   return (
-    <div className="card">
+    <div className="MembershipCard">
       
-      <div className="cardbody">
+      <div className="MembershipCardBody">
        <a href='https://ieeer8.org/'> <p>
           <strong>IEEE Membership</strong>
         </p> </a>

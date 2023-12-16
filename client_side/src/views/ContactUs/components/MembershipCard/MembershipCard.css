@@ -1,8 +1,6 @@
 /* MembershipCard.css */
 
-.card {
-    
-
+.MembershipCard {
     background-color: #3498db; /* Blue background color */
     color: #fff; /* White text color */
     width: 95%;
@@ -13,7 +11,7 @@
   
   
   
-  .cardbody {
+  .MembershipCard .MembershipCardBody {
     padding: 15px;
   }
   
