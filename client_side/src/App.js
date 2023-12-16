@@ -12,6 +12,7 @@ import AboutUs from './views/AboutUs/AboutUs';
 import Navbar from './views/Navbar';
 import CommunityDetails from './views/communityDetails';
 import ContactUs from './views/ContactUs/ContactUs';
+import Home from './views/home/Home';
 // import PrivateRoute from './firebase/privateRoute';
 
 const App = () => {
@@ -20,6 +21,7 @@ const App = () => {
     <Router>
         <Navbar home = "/" aboutus = "/user/aboutus" communityDetails = "/user/communityDetails" events = "/" contactUs = "/user/contactus" gallery = "/" login = "/user/login"/>
         <Routes>
+          <Route path="/user/home" element={<Home />} />
           <Route path="/user/profile" element={<UserProfile />} />
           <Route path="/user/register" element={<Registration />} />
           <Route path="/user/login" element={<Login />} />

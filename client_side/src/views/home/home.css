@@ -1,0 +1,155 @@
+/* titlehome.css */
+.image-container {
+    height: 600px;
+    width: 100%;
+    opacity: 60%;
+ 
+  }
+  /* eventimages.css */
+  .image-container1 {
+    height: 600px;
+    width: 100%;
+   
+ 
+  }
+    /* titletext */
+  .text-container {
+    position: relative;
+    top: -550px;
+    bottom: 200;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0);
+    padding: 20px;
+    border-radius: 8px;
+    font-size: xx-large;
+    color: rgb(239, 154, 8);
+    font-weight: bolder;
+    text-align: center;
+  }
+  
+  .text-container h2,
+  .text-container p {
+    margin: 0; /* Remove default margins */
+    animation: floatUp 2.0s ease-in-out;
+  }
+  
+  @keyframes floatUp {
+    from {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .title{
+    color: black;
+    padding-bottom: 70px;
+    
+  }
+  .about{
+    position: relative;
+    top: -200px;
+    font-weight: bolder;
+    font-size: xx-large;
+
+  }
+ .aboutpara{
+  color: blue;
+  text-align: center;
+
+ }
+ .eventslide{
+  padding: 20px;
+  font-weight: bolder;
+  font-size: xx-large;
+  width: 1100px;
+ }
+ .event-details{
+ margin-left: 1600px;
+ margin-top: -500px;
+ font-weight: bolder;
+ font-size: xx-large;
+ }
+
+
+ 
+/* .eventslide {
+  padding: 20px;
+  font-weight: bolder;
+  font-size: xx-large;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.event-details {
+  margin: 20px auto;
+  font-weight: bolder;
+  font-size: xx-large;
+}
+
+@media (max-width: 768px) {
+  .eventslide {
+    padding: 10px;
+  }
+
+  .event-details {
+    margin-top: 10px;
+  }
+} */
+
+/* Add this to your home.css file */
+
+.review-form {
+  max-width: 600px;
+  margin-top: 500px;
+  margin-left: 1200px;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.review-form h2 {
+  color: #333;
+  text-align: center;
+}
+
+.review-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.review-form label {
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.review-form input,
+.review-form textarea {
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.review-form button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.review-form button:hover {
+  background-color: #0056b3;
+}
+
