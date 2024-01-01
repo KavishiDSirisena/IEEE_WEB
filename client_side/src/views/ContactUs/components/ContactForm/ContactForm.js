@@ -32,18 +32,18 @@ const ContactForm = () => {
     <div className='first'>
       <h2>Contact Us</h2>
       <form onSubmit={handleSubmit}>
-        <label>
-          Name:
+        <div>
+          <label htmlFor='name'>Name:</label>
           <input type="text" name="name" value={formData.name} onChange={handleChange} />
-        </label>
-        <label>
-          Email:
+        </div>
+        <div>
+          <label>Email:</label>
           <input type="email" name="email" value={formData.email} onChange={handleChange} />
-        </label>
-        <label>
-          Message:
-          <textarea name="message" value={formData.message} onChange={handleChange} />
-        </label>
+        </div>
+        <div>
+          <label>Message:</label>
+          <textarea name="message" value={formData.message} onChange={handleChange} rows={5}/>
+        </div>
         <button type="submit">Submit</button>
       </form>
     </div>

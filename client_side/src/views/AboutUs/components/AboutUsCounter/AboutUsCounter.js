@@ -12,7 +12,7 @@ const AboutUsCounter = () => {
             i = +element.innerText
         }
         const counter = setInterval(()=>{
-            i++;
+            i = i + 2;
             element.innerText = i;
             
             if (i == target){
@@ -22,10 +22,20 @@ const AboutUsCounter = () => {
     }
 
     useEffect(() => {
-        updateCounter(document.getElementById('count1') , 37 , 70);
-        updateCounter(document.getElementById('count2') , 45 , 60);
-        updateCounter(document.getElementById('count3') , 50 , 50);
-        updateCounter(document.getElementById('count4') , 25 , 100);
+        // document.getElementById('count1').innerText = "0";
+        // document.getElementById('count2').innerText = "0";
+        // document.getElementById('count3').innerText = "0";
+        // document.getElementById('count4').innerText = "0";
+        // setTimeout(() => {
+        //     updateCounter(document.getElementById('count1') , .2 , 1500);
+        //     updateCounter(document.getElementById('count2') , 55 , 100);
+        //     updateCounter(document.getElementById('count3') , 8 , 650);
+        //     updateCounter(document.getElementById('count4') , 50 , 40);
+        // }, 1500);
+        updateCounter(document.getElementById('count1') , .2 , 1500);
+        updateCounter(document.getElementById('count2') , 55 , 100);
+        updateCounter(document.getElementById('count3') , 8 , 650);
+        updateCounter(document.getElementById('count4') , 50 , 40);
     })
 
     return ( 
@@ -36,12 +46,12 @@ const AboutUsCounter = () => {
                 <p id="count1"></p>
             </div>
             <div>
-                <h3>Active Projects</h3>
-                <p id="count2"></p>
+                <h3>Instagram Followers</h3>
+                <p id="count3"></p>
             </div>
             <div>
                 <h3>Active Projects</h3>
-                <p id="count3"></p>
+                <p id="count2"></p>
             </div>
             <div>
                 <h3>Active Projects</h3>

@@ -1,43 +1,99 @@
-header{
+.ContactUsHeader{
+  width: 100%;
+  height: 90vh;
+  background: url(./images/5124558.png), #00629B;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right 50px center;
+  background-size: 550px;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  /* animation: HeaderBackgroundContactUs 1s ease-out forwards; */
+
+}
+@keyframes HeaderBackgroundContactUs {
+  0%{
+      background-position: 1500px center;
+  }
+
+  80%{
+      background-position: right 75px center;
+  }
+  
+  100%{
+      background-position: right 50px center;
+  }
+}
+
+.ContactUsHeader div{
+  padding-left: 80px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+  /* left: -800px; */
+  /* animation: HeaderText 1s ease-out forwards; */
+}
+
+.ContactUsHeader div h1{
+  width: 40%;
+  color:#ddd;
+  /* text-align: center; */
+  font-size: 9.5rem;
+  letter-spacing: 5px;
+  line-height: 120px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.ContactUsHeader div h1 span{
+  color: #FFA300;
+}
+
+.ContactUsHeader div p{
+  padding-top: 25px;
+  width: 35%;
+  color: #ddd;
+  /* text-align: center; */
+  font-size: 1.1rem;
+
+}
+
+
+@media (max-width: 1000px){
+  
+  .ContactUsHeader{
+    background-position: bottom center; 
+    background-size: 500px;
+    font-size: 12px;
+    animation: none;
+  }
+
+  .ContactUsHeader div{
+    padding-left: 0;
+    padding: 80px 25px;
+    justify-content: flex-start;
+    animation: none;
+    left: 0;
+  }
+
+  .ContactUsHeader div h1{
     width: 100%;
-    height: 45vh;
-    background: rgba(0, 0, 0, 0.45);
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  header div{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  header div h1{
-    color:white;
-    text-align: center;
-    font-size: 5.5em;
-    letter-spacing: 5px;
-    font-family: 'Open Sans', sans-serif;
-  }
-  
-  header div p{
-    color: #FFA300;
-    text-align: center;
-    font-size: 1.1em;
-
+    line-height: 75px;
+    font-size: 5rem;
   }
 
-
-  @media (max-width: 1000px){
-    
-    header{
-      font-size: 12px;
-    }
-
-    header div p{
-      padding: 0 25px;
-    }
+  .ContactUsHeader div p{
+    padding: 25px 0;
+    width: 85%;
   }
+
+}
+
+@media (max-width: 400px){
+  .ContactUsHeader div h1{
+    font-size: 4rem;
+  }
+}

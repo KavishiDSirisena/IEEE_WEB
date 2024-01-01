@@ -1,53 +1,48 @@
 import '../styles/Navbar.css'
+import { NavLink } from 'react-router-dom';
 
 const Navbar = ({home , aboutus , communityDetails , events , contactUs , gallery , login}) => {
+    
+    const navBarToggle = () => {
 
-    const navBarToggle = (e) => {
+        const SideBarIcon = document.querySelector(".side-bar-icon");
+        SideBarIcon.classList.contains("clicked") ? SideBarIcon.classList.remove("clicked") : SideBarIcon.classList.add("clicked");
         
-        const NavbarToggle1 = document.getElementById("NavBarToggle1");
-        const NavbarToggle2 = document.getElementById("NavBarToggle2");
-
-        if(NavbarToggle1.style.display === ""){
-            NavbarToggle1.style.display = "none";
-        } else if (NavbarToggle1.style.display === "none"){
-            NavbarToggle1.style.display = "block"
-        } else if (NavbarToggle1.style.display === "block"){
-            NavbarToggle1.style.display = "none"
-        }
-        NavbarToggle2.style.display = NavbarToggle2.style.display === "" ? "block" : ""
-
-        const SideBar = document.getElementById("sideBar");
-
-        SideBar.style.background = SideBar.style.background === "white" ? "" : "white"
-        SideBar.style.display = SideBar.style.display === "flex" ? "" : "flex"
+        const NavBar = document.getElementById("NavBar");
+        NavBar.classList.contains("opened") ? NavBar.classList.remove("opened") : NavBar.classList.add("opened");
 
     }
 
+    const GoToPageTop = () => {
+        window.scrollTo(0, 0);
+    }
+
     return ( 
-        <nav>
-            <div className="nav-logo">
-                <img src="/SLIIT-IEEE-CS-Logo.png" alt="" />
+        <nav id='NavBar'>
+            <div className="nav-logo" onClick={GoToPageTop}>
+                <NavLink to={ home }><img src="/SLIIT-IEEE-CS-Logo.png" alt="" /></NavLink>
             </div>
             <div className="nav-links">
-                <div className="nav-item"><a href={ home }>Home</a></div>
-                <div className="nav-item"><a href={ communityDetails }>Committee</a></div>
-                <div className="nav-item"><a href={ events }>Events</a></div>
-                <div className="nav-item"><a href={ gallery }>Gallery</a></div>
-                <div className="nav-item" id='aboutus'><a href={ aboutus }>About Us</a></div>
-                <div className="nav-item"><a href={ contactUs }>Contact Us</a></div>
-                {/* <div className="nav-item"><a href={ login }>Login / Signup</a></div> */}
+                <div className="nav-item" onClick={GoToPageTop}><NavLink to={ home }>Home</NavLink></div>
+                <div className="nav-item" onClick={GoToPageTop}><NavLink to={ communityDetails }>Committee</NavLink></div>
+                <div className="nav-item" onClick={GoToPageTop}><NavLink to={ events }>Events</NavLink></div>
+                <div className="nav-item" onClick={GoToPageTop}><NavLink to={ gallery }>Gallery</NavLink></div>
+                <div className="nav-item" onClick={GoToPageTop}><NavLink to={ aboutus }>About Us</NavLink></div>
+                <div className="nav-item" onClick={GoToPageTop}><NavLink to={ contactUs }>Contact Us</NavLink></div>
+                {/* <div className="nav-item"><NavLink to={ login }>Login / Signup</a></div> */}
             </div>
-            <div className="side-bar-img" onClick={navBarToggle}>
-                <img src="/navbar-toggle-icon.png" id='NavBarToggle1' alt="" />
-                <img src="/navbar-toggle-icon2.png" id='NavBarToggle2' alt="" />
+            <div className="side-bar-icon" onClick={navBarToggle}>
+                <span className='side-bar-icon-span-1'></span>
+                <span className='side-bar-icon-span-2'></span>
+                <span className='side-bar-icon-span-3'></span>
             </div>
-            <div className="side-bar" id="sideBar">
-                <div className="nav-item"><a href={ home }>Home</a></div>
-                <div className="nav-item" id='aboutus'><a href={ aboutus }>About Us</a></div>
-                <div className="nav-item"><a href={ communityDetails }>Committee</a></div>
-                <div className="nav-item"><a href={ events }>Events</a></div>
-                <div className="nav-item"><a href={ contactUs }>Contact Us</a></div>
-                <div className="nav-item"><a href={ gallery }>Gallery</a></div>
+            <div className="side-bar">
+                <div className="nav-item" onClick={() => {navBarToggle(); GoToPageTop()}}><NavLink to={ home }>Home</NavLink></div>
+                <div className="nav-item" onClick={() => {navBarToggle(); GoToPageTop()}}><NavLink to={ communityDetails }>Committee</NavLink></div>
+                <div className="nav-item" onClick={() => {navBarToggle(); GoToPageTop()}}><NavLink to={ events }>Events</NavLink></div>
+                <div className="nav-item" onClick={() => {navBarToggle(); GoToPageTop()}}><NavLink to={ gallery }>Gallery</NavLink></div>
+                <div className="nav-item" onClick={() => {navBarToggle(); GoToPageTop()}}><NavLink to={ aboutus }>About Us</NavLink></div>
+                <div className="nav-item" onClick={() => {navBarToggle(); GoToPageTop()}}><NavLink to={ contactUs }>Contact Us</NavLink></div>
                 {/* <div className="nav-item"><a href={ login }>Login / Signup</a></div> */}
             </div>
         </nav>

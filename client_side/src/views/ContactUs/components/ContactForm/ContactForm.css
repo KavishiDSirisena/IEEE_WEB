@@ -1,41 +1,83 @@
 /* Firstcomp.css */
 
 .first {
-    text-align: center;
-    margin: 50px auto; /* Centers the form horizontally */
-  }
-  
-.first form {
-  max-width: 400px; /* Adjust the max width of the form */
-  margin: auto; /* Centers the form within its container */
+  margin: auto;
+  border-radius: 25px;
+  padding: 15px 0;
+  width: 65%;
+  text-align: center;
+  background-color: rgb(240, 240, 240);
+  backdrop-filter: blur(5px);
+  box-shadow: rgba(131, 131, 131, 0.812) 5px 5px 5px;
+  color: #FFA300;
 }
 
-.first form label {
-  display: block;
-  margin-bottom: 10px;
+.first h2{
+  font-size: 2rem;
 }
 
-.first form label input,
-.first form label textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
-  outline: none;
-  border: 2px solid #ffcd03; /* Yellow outline for input fields */
-  box-sizing: border-box;
-}
-
-.first form button {
-  background-color: #ffcd03; /* Yellow background for the submit button */
+.first form{
+  margin-top: 15px;
   color: black;
-  width: 25%;
-  font-weight: bold;
-  padding: 10px 15px;
-  border: none;
-  cursor: pointer;
-  border-radius: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
 }
 
-.first form button:hover {
-  background-color: #ffd700; /* Lighter yellow on hover */
+.first form div{
+  width: 40%;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+}
+
+.first form div label{
+  justify-self: self-start;
+  align-self: center;
+}
+
+.first form div input, 
+.first form div textarea{
+  outline: none;
+  border: none;
+  padding: 10px 5px;
+  border-radius: 5px;
+  width: 100%;
+} 
+
+.first form button{
+  width: 100px;
+  outline: none;
+  border: none;
+  padding: 10px 5px;
+  border-radius: 5px;
+  background-color: #ffa200;
+  color: white;
+  font-weight: 600;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .first {
+    width: 90%;
+  }
+
+  .first h2 {
+    font-size: 1.5rem;
+  }
+
+  .first form div {
+    width: 95%;
+  }
+
+  .first form div label {
+    justify-self: left;
+    align-self: top;
+  }
+
+  .first form button {
+    width: 150px;
+  }
 }

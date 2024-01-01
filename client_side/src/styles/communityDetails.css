@@ -26,104 +26,6 @@
     object-fit: cover;
     border-radius: 8px;
   }
-  
-  /* h2 {
-    margin: 10px 0;
-    font-size: 18px;
-  } */
-  
-
-  
-  /* Responsive Styles */
-  @media (max-width: 768px) {
-    .card {
-      margin: 10px 5px;
-    }
-  }
-  
-  @media (max-width: 576px) {
-    h1 {
-      font-size: 20px;
-    }
-  
-    h2 {
-      font-size: 16px;
-    }
-  
-    .price {
-      font-size: 14px;
-    }
-  
-    button {
-      padding: 8px 16px;
-      font-size: 14px;
-    }
-
-    .community-section {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      max-width: 800px; /* Set the desired maximum width for the section */
-      margin: 0 auto; /* Center the section on the page */
-    }
-    
-    .community-introduction {
-      width: 60%; /* Adjust the width of the paragraph section */
-    }
-    
-    .community-image {
-      width: 40%; /* Adjust the width of the image section */
-    }
-    
-    .community-image img {
-      width: 100%;
-      height: auto;
-      border-radius: 8px; /* Optional: add border-radius to the image */
-    }
-  }
-
-
-
-
-
-  
-   /* Styles for the Our Community section */
-.community-section {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1200px; /* Set the desired maximum width for the section */
-  margin: 0 auto; /* Center the section on the page */
-}
-
-.community-introduction {
-  width: 50%; /* Adjust the width of the paragraph section */
-  margin-right: 20px; /* Add some space between the paragraph and the image */
-}
-
-.community-image {
-  width: 48%; /* Adjust the width of the image section */
-  margin-top: 20px;
-}
-
-.community-image img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px; /* Optional: add border-radius to the image */
-}
-
-    /* Styles for the Our Community heading */
-    .our-community {
-      font-size: 24px; /* Set the font size for the Our Community heading */
-      font-Family: 'Times New Roman, serif';
-      color: #E87722; /* Set the font color for the Our Community heading */
-    }
-    /* Styles for the Our Community heading */
-    .best-community {
-      font-size: 32px; /* Set the font size for the Our Community heading */
-      font-Family: 'Times New Roman, serif';
-      color: #00629B; /* Set the font color for the Our Community heading */
-    }
 
     /* Styles for the main content */
     .community-details {
@@ -143,15 +45,6 @@
       height: auto;
       border-radius: 8px; /* Optional: add border-radius to the product image */
     }
-    /* Styles for the "paraa" class */
-    .paraa {
-      font-size: 20px; /* Set your desired font size */
-      font-Family: 'Times New Roman, serif'; /* Set your preferred font family */
-      color: #00629B; /* Set your preferred font color */
-      text-align: justify; /* Justify the text */
-      line-height: 1.5; /* Set the line height for better readability */
-      font-Weight: 'bold';
-    }
     .carousel-container {
       background-color: white;
       padding: 20px;
@@ -169,3 +62,79 @@
     }
 
 
+.community-section{
+  height: 90vh;
+  background: url(../views/images/communityDetails1.png), #00629B;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 800px;
+  background-position: right center;
+  /* animation: HeaderBackgroundContactUs 1s ease-out forwards; */
+}
+
+.community-section .community-introduction{
+  height: 95%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  /* left: -800px; */
+  /* animation: HeaderText 1s ease-out forwards; */
+}
+
+.community-section .community-introduction .our-community{
+  width: 90%;
+  line-height: 100px;
+  font-size: 10rem;
+  color: #FFA300;
+}
+
+.community-section .community-introduction .our-community span{
+  font-size: 6rem;
+  color: #ddd;
+}
+
+.community-section .community-introduction .best-community{
+}
+
+.community-section .community-introduction .paraa{
+  color: white;
+  font-size: .9rem;
+  width: 85%;
+}
+
+/* Blue #00629B */
+/* Orange #FFA300 */
+
+
+@media (max-width:1000px) {
+
+  .community-section{
+    background-position: bottom center;
+    background-size: 550px;
+    animation: none;
+
+  }
+  .community-section .community-introduction{
+    width: 100%;
+    justify-content: flex-start;
+    padding-top: 50px;
+    left: 0;
+    animation: none;
+  }
+
+  .community-section .community-introduction .our-community{
+    line-height: 50px;
+    font-size: 5rem;
+  }
+
+  .community-section .community-introduction .our-community span{
+    font-size: 3rem;
+  }
+
+  .community-section .community-introduction .paraa{
+
+  }
+}

@@ -4,6 +4,7 @@ import './home.css';
 
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import Footer from '../Footer/Footer';
 
 function Home() {
   const eventSliderSettings = {
@@ -112,6 +113,7 @@ function Home() {
        <button type="submit">Submit Review</button>
      </form>
    </div>
+   <Footer />
    </div>
     
   );

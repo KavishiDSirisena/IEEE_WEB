@@ -1,7 +1,8 @@
 import "./ContactUs.css"
-import ContactForm from "./components/ContactForm/ContactForm";
 import MembershipCard from "./components/MembershipCard/MembershipCard";
 import ContactUsHeader from './components/ContactUsHeader/ContactUsHeader'
+import ContactUsForm from "./components/ContactUsForm/ContactUsForm";
+import Footer from "../Footer/Footer";
 
 const ContactUs = () => {
     return ( 
@@ -10,7 +11,9 @@ const ContactUs = () => {
 
             <MembershipCard/>
 
-            <ContactForm/>
+            <ContactUsForm />
+
+            <Footer />
         </div>
      );
 }

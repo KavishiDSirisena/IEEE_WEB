@@ -2,6 +2,7 @@ import React from "react";
 import "./../styles/communityDetails.css";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import Footer from "./Footer/Footer";
 
 export default function CommunityDetails() {
 
@@ -15,13 +16,13 @@ export default function CommunityDetails() {
     {
       id: 2,
       imageurl: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyc29ufGVufDB8fDB8fHww",
-      name: "Indudini",
+      name: "Adithya",
       description: "CHAIRPERSON",
     },
     {
       id: 3,
       imageurl: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyc29ufGVufDB8fDB8fHww",
-      name: "Adithya",
+      name: "Indudini",
       description: "CHAIRPERSON",
     },
     {
@@ -41,7 +42,7 @@ export default function CommunityDetails() {
       imageurl: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyc29ufGVufDB8fDB8fHww",
       name: "Adithya",
       description: "CHAIRPERSON",
-    },
+    }
     
   ];
 
@@ -76,13 +77,7 @@ export default function CommunityDetails() {
       imageurl: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyc29ufGVufDB8fDB8fHww",
       name: "Adithya",
       description: "CHAIRPERSON",
-    },
-    {
-      id: 12,
-      imageurl: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyc29ufGVufDB8fDB8fHww",
-      name: "Adithya",
-      description: "CHAIRPERSON",
-    },
+    }
     
   ];
 
@@ -111,30 +106,30 @@ export default function CommunityDetails() {
   return (
     <div>
       <div class="community-section">
-  <div class="community-introduction">
-    <h4 className="our-community">Our Community</h4><br></br>
-    <h1 className="best-community">We are the best community..</h1>
-    
-    <p className="paraa">
-    IEEE is the world’s largest professional association 
-    advancing innovation and technological excellence for the 
-    benefit of humanity. IEEE and its members inspire a global 
-    community to innovate for a better tomorrow through its highly 
-    cited publications, conferences, technology standards, and 
-    professional and educational activities. IEEE is the trusted
-    “voice” for engineering, computing and technology information
-    around the globe..
-    </p>
-    
-  </div>
-  <div class="community-image">
-    <img src="https://images.inc.com/uploaded_files/image/1920x1080/getty_485914101_122742.jpg" />
-  </div>
-</div>
+        <div class="community-introduction">
+          <h1 className="our-community">Our <span>Community</span></h1><br></br>
+          {/* <h4 className="best-community">We are the best community..</h4> */}
+          
+          <p className="paraa">
+          IEEE is the world’s largest professional association 
+          advancing innovation and technological excellence for the 
+          benefit of humanity. IEEE and its members inspire a global 
+          community to innovate for a better tomorrow through its highly 
+          cited publications, conferences, technology standards, and 
+          professional and educational activities. IEEE is the trusted
+          “voice” for engineering, computing and technology information
+          around the globe..
+          </p>
+          
+        </div>
+        {/* <div class="community-image">
+          <img src="https://images.inc.com/uploaded_files/image/1920x1080/getty_485914101_122742.jpg" />
+        </div> */}
+      </div>
 
 
- {/* Current board Carousel starts here */}
- <section className="community-details">
+      {/* Current board Carousel starts here */}
+      <section className="community-details">
         <div className="carousel-container blue-background">
           <h1 className="best-community">Current Executive Board</h1>
           <h3 className="our-community">(2023 - 2024)</h3>
@@ -150,13 +145,6 @@ export default function CommunityDetails() {
           </Carousel>
         </div>
 
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
         <br></br>
         <br></br>
 
@@ -176,6 +164,7 @@ export default function CommunityDetails() {
           </Carousel>
         </div>
       </section>
+      <Footer />
     </div>
   );
 }
